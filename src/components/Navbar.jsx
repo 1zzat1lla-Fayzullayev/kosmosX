@@ -123,7 +123,7 @@ const Navbar = () => {
                       }`}
                   >
                     {/* {getText("aboutUs")} */}
-                    Uzay Kampı Programları
+                    Kamp programları
                   </Link>
                 </li>
                 <li onClick={() => handleLinkClick("/how-to-join")}>
@@ -133,7 +133,7 @@ const Navbar = () => {
                       }`}
                   >
                     {/* {getText("aboutUs")} */}
-                    Nasıl Katılabilirsiniz?
+                    Katılım
                   </Link>
                 </li>
                 <li onClick={() => handleLinkClick("/success-stories")}>
@@ -176,7 +176,7 @@ const Navbar = () => {
 
             <div
               onClick={handleOpenMobileNav}
-              className={`burger pr-4 ml-auto d-flex d-lg-none`}
+              className={`burger`}
             >
               {burger ? (
                 <img src="/img/opened-burger.png" alt="burger" />
