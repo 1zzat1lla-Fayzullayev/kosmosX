@@ -1,0 +1,6 @@
+export const servicesLinks = [
+  { title: "1. Bilgilendirme ve Danışmanlık:", desc: "Öğrenciler, ajansın uzman danışmanlarından Türkiye ve Özbekistan'daki eğitim kurumları hakkında ayrıntılı bilgi alabilirler. Danışmanlar, öğrencilerin akademik geçmişlerine ve hedeflerine uygun eğitim programlarını belirlemelerine yardımcı olur." },
+  { title: "2. Başvuru Belgelerinin Hazırlanması:", desc: "Ajans, öğrencilerin gerekli belgeleri toplamasına ve başvuru formlarını eksiksiz doldurmasına destek sağlar. Bu belgeler arasında transkriptler, dil yeterlilik belgeleri, referans mektupları ve diğer gerekli dokümanlar bulunur." },
+  { title: "3. Başvuru Takibi ve İletişim:", desc: "Ajans, başvuruların ilgili eğitim kurumlarına zamanında ulaşmasını sağlar ve sürecin her aşamasını yakından takip eder. Başvuru sürecinde öğrencilerle düzenli iletişim kurarak, herhangi bir eksiklik veya gecikme durumunda hızlı çözüm üretir." },
+  { title: "4. Yerleştirme ve Adaptasyon:", desc: "Öğrencilerin kabul aldığı eğitim kurumlarına yerleştirilmesi sürecinde de ajans rehberlik eder. Ayrıca, öğrencilerin yeni eğitim ortamına adaptasyonunu kolaylaştırmak için oryantasyon programları düzenler." },
+]
