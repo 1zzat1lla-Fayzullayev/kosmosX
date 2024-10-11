@@ -21,7 +21,7 @@ const App = () => {
         keywords="eduagency, study in Turkey, study in Uzbekistan"
       />
       <Header />
-      <NewCards />
+      {/* <NewCards /> */}
       <Getintouch />
     </>
   );

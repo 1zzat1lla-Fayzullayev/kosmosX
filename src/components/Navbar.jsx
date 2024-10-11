@@ -147,7 +147,7 @@ const Navbar = () => {
                   </Link>
                 </li>
 
-                <li onClick={() => handleLinkClick("/question")}>
+                {/* <li onClick={() => handleLinkClick("/question")}>
                   <Link
                     to="/question"
                     className={`${location.pathname === "/question" ? "active-link" : ""
@@ -155,7 +155,7 @@ const Navbar = () => {
                   >
                     {getText("question")}
                   </Link>
-                </li>
+                </li> */}
 
               </ul>
               <div className="siteLang d-flex align-items-center">
@@ -176,7 +176,7 @@ const Navbar = () => {
 
             <div
               onClick={handleOpenMobileNav}
-              className={`burger`}
+              className={`burger pr-4 ml-auto d-flex d-lg-none`}
             >
               {burger ? (
                 <img src="/img/opened-burger.png" alt="burger" />
