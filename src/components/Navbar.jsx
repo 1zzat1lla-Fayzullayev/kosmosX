@@ -218,8 +218,8 @@ const Navbar = () => {
 
                 <li>
                   <Link
-                    to="/airtravel"
-                    className={`${location.pathname === "/airtravel" ? "active-link" : ""
+                    to="/contacts"
+                    className={`${location.pathname === "/contacts" ? "active-link" : ""
                       }`}
                   >
                     İletişim
