@@ -5,6 +5,7 @@ import Getintouch from "./components/Getintouch";
 import ReactGA from "react-ga4";
 import Helmet from "./components/Helmet";
 import NewCards from "./components/NewCards";
+import Partners from "./components/Partners";
 
 const App = () => {
   useEffect(() => {
@@ -23,6 +24,7 @@ const App = () => {
       <Header />
       {/* <NewCards /> */}
       {/* <Getintouch /> */}
+      <Partners />
     </>
   );
 };
