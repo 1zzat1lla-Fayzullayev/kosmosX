@@ -37,7 +37,7 @@ const Header = () => {
   return (
     <div className="header">
       <div className="container header-pc" style={{ marginTop: "130px", borderRadius: "20px" }}>
-        <Swiper>
+        <Swiper >
           {headerData.map((item) => (
             <>
               <div

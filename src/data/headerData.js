@@ -10,6 +10,10 @@ const useHeaderData = () => {
         const fetchData = () => {
             const data = [
                 { title: getText("headerSwiperTitle2"), description: getText("headerSwiperParagraph2"), headerLink: '/student-transfer', bgImage: "/img/header2.png", mobBgImage: "https://cdn.culture.ru/images/cf73ffdd-5879-591e-9f76-39d8bc27f7d6" },
+                { title: getText("headerSwiperTitle2"), description: getText("headerSwiperParagraph2"), headerLink: '/student-transfer', bgImage: "/img/header2.png", mobBgImage: "https://cdn.culture.ru/images/cf73ffdd-5879-591e-9f76-39d8bc27f7d6" },
+                { title: getText("headerSwiperTitle2"), description: getText("headerSwiperParagraph2"), headerLink: '/student-transfer', bgImage: "/img/header2.png", mobBgImage: "https://cdn.culture.ru/images/cf73ffdd-5879-591e-9f76-39d8bc27f7d6" },
+                { title: getText("headerSwiperTitle2"), description: getText("headerSwiperParagraph2"), headerLink: '/student-transfer', bgImage: "/img/header2.png", mobBgImage: "https://cdn.culture.ru/images/cf73ffdd-5879-591e-9f76-39d8bc27f7d6" },
+                { title: getText("headerSwiperTitle2"), description: getText("headerSwiperParagraph2"), headerLink: '/student-transfer', bgImage: "/img/header2.png", mobBgImage: "https://cdn.culture.ru/images/cf73ffdd-5879-591e-9f76-39d8bc27f7d6" },
 
             ];
             setHeaderData(data);
