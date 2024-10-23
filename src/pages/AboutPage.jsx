@@ -31,7 +31,8 @@ function AboutPage() {
           Ekibimiz, çeşitli alanlarda uzmanlaşmış profesyonellerden oluşmaktadır. Uzay kampına gönderdiğimiz öğrencilerin başarı hikayeleri ile doluyuz. Bizimle birlikte bu heyecan verici yolculuğa çıkmaya hazır olun!
         </p> */}
 
-        <Getintouch />
+        {/* <Getintouch /> */}
+        <img src="/img/Sertifika_page.jpg" alt="" />
         <MobileAboutPage />
       </div>
     </>

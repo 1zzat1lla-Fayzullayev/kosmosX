@@ -22,7 +22,7 @@ const App = () => {
       />
       <Header />
       {/* <NewCards /> */}
-      <Getintouch />
+      {/* <Getintouch /> */}
     </>
   );
 };
