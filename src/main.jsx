@@ -21,6 +21,14 @@ import Question from "./pages/Question.jsx";
 import SpaceCampPrograms from "./pages/SpaceCampPrograms.jsx";
 import HowtoJoin from "./pages/HowtoJoin.jsx";
 import SuccessStories from "./pages/SuccessStories.jsx";
+import SpaceCampTrip from "./pages/SpaceCampTrip.jsx";
+import SpaceWorkshops from "./pages/SpaceWorkshops.jsx";
+import SpaceProjects from "./pages/SpaceProjects.jsx";
+import CurriculumDevelopment from "./pages/dropdownPages/CurriculumDevelopment.jsx";
+import TrainingtheEducator from "./pages/dropdownPages/TrainingtheEducator.jsx";
+import AwarenessActivities from "./pages/dropdownPages/AwarenessActivities.jsx";
+import BookPublishing from "./pages/dropdownPages/BookPublishing.jsx";
+import OnlineEducationPlatform from "./pages/dropdownPages/OnlineEducationPlatform.jsx";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
@@ -36,6 +44,14 @@ root.render(
           <Route path="/space-camp-programs" exact element={<SpaceCampPrograms />} />
           <Route path="/how-to-join" exact element={<HowtoJoin />} />
           <Route path="/success-stories" exact element={<SuccessStories />} />
+          <Route path="/space-camp-trip" exact element={<SpaceCampTrip />} />
+          <Route path="/space-workshops" exact element={<SpaceWorkshops />} />
+          <Route path="/space-projects" exact element={<SpaceProjects />} />
+          <Route path="/curriculum-development" exact element={<CurriculumDevelopment />} />
+          <Route path="/training-the-educator" exact element={<TrainingtheEducator />} />
+          <Route path="/awareness-activities" exact element={<AwarenessActivities />} />
+          <Route path="/book-publishing" exact element={<BookPublishing />} />
+          <Route path="/online-education-platform" exact element={<OnlineEducationPlatform />} />
 
           <Route path="/contacts" exact element={<Contacts />} />
           <Route path="/about" exact element={<AboutPage />} />

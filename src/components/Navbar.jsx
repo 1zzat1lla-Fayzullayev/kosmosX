@@ -10,6 +10,11 @@ const Navbar = () => {
   const [navbar, setNavbar] = useState(false);
   const [burger, setBurger] = useState(false);
   const location = useLocation();
+  const [isPartnersDropdownOpen, setIsPartnersDropdownOpen] = useState(false);
+
+  const handlePartnersDropdownHover = (state) => {
+    setIsPartnersDropdownOpen(state);
+  };
 
   useEffect(() => {
     const isActive = localStorage.getItem("navbarActive");
@@ -116,47 +121,110 @@ const Navbar = () => {
                     {getText("aboutUs")}
                   </Link>
                 </li>
-                <li onClick={() => handleLinkClick("/space-camp-programs")}>
+                <li onClick={() => handleLinkClick("/space-camp-trip")}>
                   <Link
-                    to="/space-camp-programs"
-                    className={`${location.pathname === "/space-camp-programs" ? "active-link" : ""
+                    to="/space-camp-trip"
+                    className={`${location.pathname === "/space-camp-trip" ? "active-link" : ""
                       }`}
                   >
                     {/* {getText("aboutUs")} */}
-                    Kamp programları
+                    Uzay Kampı Gezisi
                   </Link>
                 </li>
-                <li onClick={() => handleLinkClick("/how-to-join")}>
+                <li onClick={() => handleLinkClick("/space-workshops")}>
                   <Link
-                    to="/how-to-join"
-                    className={`${location.pathname === "/how-to-join" ? "active-link" : ""
+                    to="/space-workshops"
+                    className={`${location.pathname === "/space-workshops" ? "active-link" : ""
                       }`}
                   >
-                    {/* {getText("aboutUs")} */}
-                    Katılım
+                    Uzay Atölyeleri
                   </Link>
                 </li>
-                <li onClick={() => handleLinkClick("/success-stories")}>
+                <li onClick={() => handleLinkClick("/space-projects")} style={{ display: "flex", alignItems: "center" }}
+                  onMouseEnter={() => handlePartnersDropdownHover(true)}
+                  onMouseLeave={() => handlePartnersDropdownHover(false)}>
                   <Link
-                    to="/success-stories"
-                    className={`${location.pathname === "/success-stories" ? "active-link" : ""
+                    to="/space-projects"
+                    className={`${location.pathname === "/space-projects" ? "active-link" : ""
                       }`}
                   >
                     {/* {getText("aboutUs")} */}
-                    Başarı Hikayeleri
+                    Uzay Projeleri
                   </Link>
+
+                  <motion.ul
+                    initial={{ opacity: 0, y: -10 }}
+                    animate={{
+                      opacity: isPartnersDropdownOpen ? 1 : 0,
+                      y: isPartnersDropdownOpen ? 0 : -30,
+                    }}
+                    transition={{ duration: 0.3 }}
+                    className={`dropdown-menu ${isPartnersDropdownOpen ? "show" : ""}`}
+                  >
+                    <li onClick={() => handleLinkClick("/curriculum-development")}>
+                      <Link
+                        to="/curriculum-development"
+                        className={`${location.pathname === "/curriculum-development"
+                          ? "active-link"
+                          : ""
+                          }`}
+                      >
+                        Müfredat Geliştirme
+                      </Link>
+                    </li>
+
+                    <li onClick={() => handleLinkClick("/training-the-educator")}>
+                      <Link
+                        to="/training-the-educator"
+                        className={`${location.pathname === "/training-the-educator" ? "active-link" : ""
+                          }`}
+                      >
+                        Eğitimcinin Eğitimi
+                      </Link>
+                    </li>
+
+                    <li onClick={() => handleLinkClick("/awareness-activities")}>
+                      <Link
+                        to="/awareness-activities"
+                        className={`${location.pathname === "/awareness-activities" ? "active-link" : ""
+                          }`}
+                      >
+                        Farkındalık Etkinlikleri
+                      </Link>
+                    </li>
+
+                    <li onClick={() => handleLinkClick("/book-publishing")}>
+                      <Link
+                        to="/book-publishing"
+                        className={`${location.pathname === "/book-publishing" ? "active-link" : ""
+                          }`}
+                      >
+                        Kitap Yayıncılığı
+                      </Link>
+                    </li>
+
+                    <li onClick={() => handleLinkClick("/online-education-platform")}>
+                      <Link
+                        to="/online-education-platform"
+                        className={`${location.pathname === "/online-education-platform" ? "active-link" : ""
+                          }`}
+                      >
+                        Online Eğitim Platformu
+                      </Link>
+                    </li>
+
+                  </motion.ul>
                 </li>
 
-                {/* <li onClick={() => handleLinkClick("/question")}>
+                <li>
                   <Link
-                    to="/question"
-                    className={`${location.pathname === "/question" ? "active-link" : ""
+                    to="/airtravel"
+                    className={`${location.pathname === "/airtravel" ? "active-link" : ""
                       }`}
                   >
-                    {getText("question")}
+                    İletişim
                   </Link>
-                </li> */}
-
+                </li>
               </ul>
               <div className="siteLang d-flex align-items-center">
                 <img
